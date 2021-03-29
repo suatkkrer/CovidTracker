@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="22"
+    tools:context=".view.CountryDetails">
+
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:text="Country"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:text="Country Code"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:text="New Confirmed"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:text="Total Confirmed"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:text="New Deaths"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:text="Total Deaths"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:text="New Recovered"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:text="Total Recovered"
+        android:textSize="20sp"
+        />
+
+
+</LinearLayout>
+
+</layout>
