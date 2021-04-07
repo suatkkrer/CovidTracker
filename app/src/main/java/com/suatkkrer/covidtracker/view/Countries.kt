@@ -41,7 +41,7 @@ class Countries : Fragment() {
         countryRecycler.layoutManager = LinearLayoutManager(context)
         countryRecycler.adapter = countryAdapter
 
-
+        observeLiveData()
 
 
         /* fragment_button.setOnClickListener {
@@ -51,7 +51,7 @@ class Countries : Fragment() {
     }
 
 
-    fun observeLiveData() {
+    private fun observeLiveData() {
         viewModel.countries.observe(viewLifecycleOwner, Observer {countries ->
             countries?.let {
                 countryRecycler.visibility = View.VISIBLE
