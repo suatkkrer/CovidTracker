@@ -31,4 +31,11 @@ class CountryAdapter (val countryList: ArrayList<countries_api>) : RecyclerView.
     override fun getItemCount(): Int {
         return countryList.size
     }
+
+    fun updateList(newCountryList : List<countries_api>){
+        countryList.clear()
+        countryList.addAll(newCountryList)
+        notifyDataSetChanged()
+    }
+
 }
