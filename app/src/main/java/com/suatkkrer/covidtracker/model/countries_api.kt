@@ -8,7 +8,7 @@ data class countries_api(
     val NewConfirmed: Int,
     val NewDeaths: Int,
     val NewRecovered: Int,
-    val Premium: Premium,
+   // val Premium: Premium,
     val Slug: String,
     val TotalConfirmed: Int,
     val TotalDeaths: Int,
