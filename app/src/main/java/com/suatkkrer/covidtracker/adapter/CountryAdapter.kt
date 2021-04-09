@@ -6,12 +6,13 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.suatkkrer.covidtracker.R
+import com.suatkkrer.covidtracker.model.Country
 import com.suatkkrer.covidtracker.model.countries_api
 import com.suatkkrer.covidtracker.view.CountriesDirections
 import kotlinx.android.synthetic.main.list_row.view.*
 import java.util.ArrayList
 
-class CountryAdapter (val countryList: ArrayList<countries_api>) : RecyclerView.Adapter<CountryAdapter.CountryViewHolder>() {
+class CountryAdapter (val countryList: ArrayList<Country>) : RecyclerView.Adapter<CountryAdapter.CountryViewHolder>() {
 
     class CountryViewHolder(var view : View) : RecyclerView.ViewHolder(view) {
 
@@ -39,7 +40,7 @@ class CountryAdapter (val countryList: ArrayList<countries_api>) : RecyclerView.
         return countryList.size
     }
 
-    fun updateList(newCountryList : List<countries_api>){
+    fun updateList(newCountryList : List<Country>){
         countryList.clear()
         countryList.addAll(newCountryList)
         notifyDataSetChanged()

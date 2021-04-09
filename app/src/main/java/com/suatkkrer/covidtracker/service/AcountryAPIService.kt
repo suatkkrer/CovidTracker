@@ -1,5 +1,7 @@
 package com.suatkkrer.covidtracker.service
 
+import com.suatkkrer.covidtracker.model.CountryArray
+import com.suatkkrer.covidtracker.model.NewJson
 import com.suatkkrer.covidtracker.model.countries_api
 import io.reactivex.Single
 import retrofit2.Retrofit
@@ -17,7 +19,7 @@ class AcountryAPIService {
         .build()
         .create(CoronaAPI::class.java)
 
-    fun getData() : Single<List<countries_api>>{
+    fun getData() : Single<NewJson>{
         return api.getCountries()
     }
 
