@@ -3,9 +3,11 @@ package com.suatkkrer.covidtracker.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.suatkkrer.covidtracker.R
 import com.suatkkrer.covidtracker.model.countries_api
+import com.suatkkrer.covidtracker.view.CountriesDirections
 import kotlinx.android.synthetic.main.list_row.view.*
 import java.util.ArrayList
 
@@ -25,6 +27,11 @@ class CountryAdapter (val countryList: ArrayList<countries_api>) : RecyclerView.
 
         holder.view.country_row.text = countryList[position].Country
         holder.view.countrycode_row.text = countryList[position].CountryCode
+
+        holder.view.setOnClickListener {
+            val action = CountriesDirections.actionCountriesToCountryDetails()
+            Navigation.findNavController(it).navigate(action)
+        }
 
     }
 
