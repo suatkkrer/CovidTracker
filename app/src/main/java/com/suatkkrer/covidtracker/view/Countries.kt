@@ -41,6 +41,14 @@ class Countries : Fragment() {
         countryRecycler.layoutManager = LinearLayoutManager(context)
         countryRecycler.adapter = countryAdapter
 
+        refresh_Layout.setOnRefreshListener {
+            countryRecycler.visibility = View.GONE
+            internetError.visibility = View.GONE
+            countryLoadingProgressBar.visibility = View.VISIBLE
+            viewModel.refreshData()
+            refresh_Layout.isRefreshing = false
+        }
+
         observeLiveData()
 
 
