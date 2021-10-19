@@ -56,6 +56,14 @@ class Countries : Fragment() {
             val action = CountriesDirections.actionCountriesToCountryDetails()
             Navigation.findNavController(it).navigate(action)
         } */
+        /* fragment_button.setOnClickListener {
+            val action = CountriesDirections.actionCountriesToCountryDetails()
+            Navigation.findNavController(it).navigate(action)
+        } */
+        /* fragment_button.setOnClickListener {
+            val action = CountriesDirections.actionCountriesToCountryDetails()
+            Navigation.findNavController(it).navigate(action)
+        } */
     }
 
 
